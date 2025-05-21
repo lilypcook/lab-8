@@ -1,8 +1,7 @@
 ---
 title: "Lab 8"
 subtitle: "Cheese Gromit!"
-editor: visual
-embed-resources: true
+editor: source
 ---
 
 > **Goal:** Scrape information from <https://www.cheese.com> to obtain a dataset of characteristics about different cheeses, and gain deeper insight into your coding process. 🪤
@@ -12,6 +11,8 @@ embed-resources: true
 The robots.txt is located at <https://www.cheese.com/robots.txt> . This file is pretty blank, with only two lines. These two lines tell us that anyone can crawl (`User-agent` is set to \*) and where the site map is located (<https://www.cheese.com/sitemap.xml>)
 
 **Part 2:** Learn about the `html_attr()` function from `rvest`. Describe how this function works with a small example.
+
+The `html_attr()` function gets and returns a character vector containing the values of the specified attribute for an element of the HTML file (ex. href, class, id). This function requires two arguments; `x`, the HTML element (usually from `read_html()`), `name`, the name of the attribute to retrieve, like `href`, `class`, etc. There is a third optional argument, `default`, which is related to how non-existent attributes are handled, which defaults to `NA_character`, meaning NA is returned in these cases
 
 **Part 3:** (Do this alongside Part 4 below.) I used [ChatGPT](https://chat.openai.com/chat) to start the process of scraping cheese information with the following prompt:
 
