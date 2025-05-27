@@ -16,6 +16,7 @@ The `html_attr()` function gets and returns a character vector containing the va
 
 ```{r}
 #| label: part 2 rvest example
+#| eval: false
 
 # define url
 cheese_url <- "https://www.cheese.com"
@@ -46,7 +47,7 @@ Fully document your process of checking this code. Record any observations you m
 # load libraries
 library(rvest)
 library(dplyr)
-library(stringr)
+
 # define url
 url <- "https://www.cheese.com/alphabetical"
 
@@ -97,6 +98,7 @@ To be kind to the website owners, please add a 1 second pause between page queri
 library(rvest)
 library(dplyr)
 library(purrr)
+library(stringr)
 
 # defining url and pages to look at
 base_url <- "https://www.cheese.com/alphabetical/?per_page=100"
