@@ -199,6 +199,12 @@ df_cheeses <- df_cheeses %>%
     flavour = str_remove(flavour, "Flavour: ")
   )
 
+names <- cheese_data %>%
+  filter(Name %in% cheeses) %>%
+  select(Name)
+
+df_cheeses <- cbind(names, df_cheeses)
+
 df_cheeses
 ```
 
